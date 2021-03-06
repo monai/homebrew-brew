@@ -1,5 +1,5 @@
 class Libfragmentzip < Formula
-  desc "A library allowing to download single files from a remote zip archive"
+  desc "C library allowing to download single files from a remote zip archive"
   homepage "https://github.com/tihmstar/libfragmentzip"
   url "https://github.com/tihmstar/libfragmentzip/archive/60.tar.gz"
   sha256 "5038761c01b1d5be968e8dbc295cfb8c1189d130262d4833bac9d54cdd8c5b8c"

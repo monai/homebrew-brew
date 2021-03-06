@@ -1,5 +1,5 @@
 class Tsschecker < Formula
-  desc "a powerfull tool to check tss signing status of various devices and firmwares"
+  desc "Powerfull tool to check TSS signing status of various devices and firmwares"
   homepage "https://github.com/tihmstar/tsschecker"
   url "https://github.com/tihmstar/tsschecker/archive/304.tar.gz"
   sha256 "a83b76d72c4434a29907a6072193488f9034fcff793d33c349590ead82de4275"
