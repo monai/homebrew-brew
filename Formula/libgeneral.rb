@@ -1,5 +1,5 @@
 class Libgeneral < Formula
-  desc "general stuff for projects"
+  desc "General stuff for projects"
   homepage "https://github.com/tihmstar/libgeneral"
   url "https://github.com/tihmstar/libgeneral/archive/54.tar.gz"
   sha256 "e847ab7c6f4e099f536d6aff4e448adac11b3e3a0d124937eead42b641b7cf39"
