@@ -9,6 +9,7 @@ class Mfcuk2 < Formula
   depends_on "automake" => :build
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
+
   depends_on "libnfc"
   depends_on "libusb-compat"
 
