@@ -13,6 +13,9 @@ class Libfragmentzip < Formula
 
   depends_on "libzip"
 
+  uses_from_macos "zlib"
+  uses_from_macos "curl"
+
   def install
     inreplace "configure.ac" do |s|
       s.gsub! "m4_esyscmd([git rev-list --count HEAD | tr -d '\\n'])", "60"
