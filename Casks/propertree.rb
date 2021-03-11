@@ -12,4 +12,5 @@ cask "propertree" do
   end
 
   app "#{staged_path}/ProperTree-#{version}/ProperTree.app"
+  binary "#{appdir}/ProperTree.app/Contents/MacOS/ProperTree.command", target: "propertree"
 end
