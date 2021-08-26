@@ -13,8 +13,8 @@ class Libfragmentzip < Formula
 
   depends_on "libzip"
 
-  uses_from_macos "zlib"
   uses_from_macos "curl"
+  uses_from_macos "zlib"
 
   def install
     inreplace "configure.ac" do |s|

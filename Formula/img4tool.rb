@@ -1,5 +1,5 @@
 class Img4tool < Formula
-  desc "A tool for manipulating IMG4, IM4M and IM4P files"
+  desc "Tool for manipulating IMG4, IM4M and IM4P files"
   homepage "https://github.com/tihmstar/img4tool"
   url "https://github.com/tihmstar/img4tool/archive/refs/tags/197.tar.gz"
   sha256 "06fc95b1dbe68c2fb631f349932dd63f21847b71ca6a39b3e24ec701676f09a6"

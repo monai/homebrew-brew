@@ -14,8 +14,8 @@ class Tsschecker < Formula
   depends_on "libirecovery"
   depends_on "libplist"
 
-  uses_from_macos "zlib"
   uses_from_macos "curl"
+  uses_from_macos "zlib"
 
   resource "jssy" do
     url "https://github.com/tihmstar/jssy.git", revision: "e17d3c8ec5216692efbbe59bbe9801bb7661e07d"
