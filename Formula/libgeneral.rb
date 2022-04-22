@@ -1,8 +1,9 @@
 class Libgeneral < Formula
   desc "General stuff for projects"
   homepage "https://github.com/tihmstar/libgeneral"
-  url "https://github.com/tihmstar/libgeneral/archive/refs/tags/56.tar.gz"
-  sha256 "16ea189a414296a5867cfe4198bf548c941847807148260afb0cb0271750aa07"
+  url "https://github.com/tihmstar/libgeneral/archive/refs/tags/63.tar.gz"
+  sha256 "0726a93fb549285d50f9af8cf78affc9459255b1c3d9b196aa57a7fbb2824667"
+  version "63"
   license "LGPL-2.1"
 
   depends_on "autoconf" => :build
@@ -12,8 +13,8 @@ class Libgeneral < Formula
 
   def install
     inreplace "configure.ac" do |s|
-      s.gsub! "m4_esyscmd([git rev-list --count HEAD | tr -d '\\n'])", "56"
-      s.gsub! "m4_esyscmd([git rev-parse HEAD | tr -d '\\n'])", "b04a27d0584c4c10c4b376325bb928c0ad12e285"
+      s.gsub! "m4_esyscmd([git rev-list --count HEAD | tr -d '\\n'])", version
+      s.gsub! "m4_esyscmd([git rev-parse HEAD | tr -d '\\n'])", "017d71edb0a12ff4fa01a39d12cd297d8b3d8d34"
     end
 
     system "./autogen.sh", "--prefix=#{prefix}"
