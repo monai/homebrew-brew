@@ -5,8 +5,8 @@ class PcscTools < Formula
 
   desc "Tools to test a PC/SC driver, card or reader or send commands"
   homepage "http://ludovic.rousseau.free.fr/softwares/pcsc-tools/"
-  url "http://ludovic.rousseau.free.fr/softwares/pcsc-tools/pcsc-tools-1.5.7.tar.bz2"
-  sha256 "e0ea8f8496d5bcf5316da913869ba95b925d0405c2aaade801c0d6ce7697699d"
+  url "http://ludovic.rousseau.free.fr/softwares/pcsc-tools/pcsc-tools-1.6.0.tar.bz2"
+  sha256 "651c8dd74bcb33db4c16935ce5d80dd1aa6eb20ba9d5c4b9631a098326ef8b9f"
   license "GPL-2.0"
 
   option "with-gui", "Install `gscriptor` GTK+3 program"
