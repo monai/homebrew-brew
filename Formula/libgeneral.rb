@@ -2,8 +2,8 @@ class Libgeneral < Formula
   desc "General stuff for projects"
   homepage "https://github.com/tihmstar/libgeneral"
   url "https://github.com/tihmstar/libgeneral/archive/refs/tags/63.tar.gz"
-  sha256 "0726a93fb549285d50f9af8cf78affc9459255b1c3d9b196aa57a7fbb2824667"
   version "63"
+  sha256 "0726a93fb549285d50f9af8cf78affc9459255b1c3d9b196aa57a7fbb2824667"
   license "LGPL-2.1"
 
   depends_on "autoconf" => :build
