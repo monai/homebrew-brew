@@ -1,9 +1,8 @@
 class Openpace < Formula
   desc "Cryptographic library for EAC version 2"
   homepage "https://frankmorgner.github.io/openpace/"
-  url "https://github.com/frankmorgner/openpace/archive/refs/tags/1.1.2.tar.gz"
-  version "1.1.2"
-  sha256 "a527f25822f5c98cc6b4ea21c666725901bf2849294d2af81b790f650ad48886"
+  url "https://github.com/frankmorgner/openpace.git", using: :git, revision: "b5885aeb9fe5bdba86d90f8d67555a2ceeb91b0d"
+  version "1.1.2-1"
   license "GPL-3.0"
 
   depends_on "autoconf" => :build
@@ -13,12 +12,12 @@ class Openpace < Formula
   depends_on "libtool" => :build
   depends_on "pkg-config" => :build
 
-  depends_on "openssl@1.1"
+  depends_on "openssl@3"
 
   def install
     system "autoreconf", "--verbose", "--install"
     system "./configure", "--prefix=#{prefix}"
-    system "make", "-j", "1", "install"
+    system "make", "install"
 
     rm bin/"eactest"
     rm bin/"example"
